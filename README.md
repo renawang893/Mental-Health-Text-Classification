@@ -10,9 +10,10 @@ This project focuses on the automated classification of mental health-related te
 ## Technical Implementation
 * **Models:** Evaluated Logistic Regression, SVM, SGD, and **DistilBERT**.
 * **Engineering:** Developed a custom `OnTheFlyDataset` (PyTorch `Dataset` wrapper) to handle on-the-fly tokenization, avoiding memory bottlenecks during the training of large-scale datasets.
-* [cite_start]**Preprocessing:** Implemented full pipelines for data cleaning, tokenization, and **TF-IDF** feature extraction[cite: 62].
+* **Preprocessing:** Implemented full pipelines for data cleaning, tokenization, and **TF-IDF** feature extraction.
 
 ## Responsible AI & Error Analysis
 A core component of this project was investigating "why" models fail. I conducted a deep-dive error analysis to identify:
 * **Label Noise:** Ambiguities in datasets like the "teenagers" subreddit where serious mental health discussions overlap with general venting.
 * **Bias Detection:** Identifying misclassifications caused by figurative language and slang.
+
